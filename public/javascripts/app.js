@@ -25,6 +25,7 @@ function setCircleSize(el, size) {
     height: size,
     borderRadius: Math.floor(size * 0.5)
   });
+  el.find('span.title').css('margin-top', el.height() / 2 - (75 / 2));
 }
 
 function initCircles(data) {
@@ -35,8 +36,8 @@ function initCircles(data) {
   var youRatio = data.you.score / total,
       globalRatio = 1 - youRatio;
 
-  you.find('span.count').html(you.data.score + ' books per person');
-  global.find('span.count').html(global.data.score + ' books per person');
+  you.find('span.count').html(data.you.score + ' books per person');
+  global.find('span.count').html(data.global.score + ' books per person');
 
   setCircleSize(you, (youRatio * varSize) + minSize);
   setCircleSize(global, (globalRatio * varSize) + minSize);
