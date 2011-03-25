@@ -580,3 +580,131 @@ RuntimeError ():
 Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
 Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.9ms)
 Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.7ms)
+
+
+Started GET "/connect" for 127.0.0.1 at Fri Mar 25 18:30:19 +0100 2011
+  Processing by UsersController#fb_connect as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`fb_id` = 522091142) LIMIT 1
+Completed   in 2620ms
+
+NoMethodError (undefined method `url' for #<Net::HTTP::Get GET>):
+  app/controllers/users_controller.rb:30:in `fb_connect'
+  app/controllers/users_controller.rb:25:in `each'
+  app/controllers/users_controller.rb:25:in `each_slice'
+  app/controllers/users_controller.rb:25:in `fb_connect'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.9ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.8ms)
+
+
+Started GET "/connect" for 127.0.0.1 at Fri Mar 25 18:30:29 +0100 2011
+  Processing by UsersController#fb_connect as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`fb_id` = 522091142) LIMIT 1[0m
+Completed   in 2096ms
+
+NoMethodError (undefined method `uri' for #<Net::HTTP::Get GET>):
+  app/controllers/users_controller.rb:30:in `fb_connect'
+  app/controllers/users_controller.rb:25:in `each'
+  app/controllers/users_controller.rb:25:in `each_slice'
+  app/controllers/users_controller.rb:25:in `fb_connect'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.7ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.1ms)
+
+
+Started GET "/connect" for 127.0.0.1 at Fri Mar 25 18:30:38 +0100 2011
+  Processing by UsersController#fb_connect as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`fb_id` = 522091142) LIMIT 1
+Completed   in 1676ms
+
+RuntimeError (/books/?access_token=209106392449144%7C2.BOf1akOaj_XQbPmd0vK4eg__.3600.1301076000-522091142%7CVOHeOx6b-9Z_Xxhua087o7HzZ9M&ids=16157%2C217165%2C710818%2C803696%2C832655%2C840915%2C1500816%2C2006424%2C2101355%2C5008281):
+  app/controllers/users_controller.rb:30:in `fb_connect'
+  app/controllers/users_controller.rb:25:in `each'
+  app/controllers/users_controller.rb:25:in `each_slice'
+  app/controllers/users_controller.rb:25:in `fb_connect'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.1ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.4ms)
+
+
+Started GET "/connect" for 127.0.0.1 at Fri Mar 25 18:30:46 +0100 2011
+  Processing by UsersController#fb_connect as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`fb_id` = 522091142) LIMIT 1[0m
+Completed   in 3490ms
+
+RuntimeError (/books?access_token=209106392449144%7C2.BOf1akOaj_XQbPmd0vK4eg__.3600.1301076000-522091142%7CVOHeOx6b-9Z_Xxhua087o7HzZ9M&ids=16157%2C217165%2C710818%2C803696%2C832655%2C840915%2C1500816%2C2006424%2C2101355%2C5008281):
+  app/controllers/users_controller.rb:30:in `fb_connect'
+  app/controllers/users_controller.rb:25:in `each'
+  app/controllers/users_controller.rb:25:in `each_slice'
+  app/controllers/users_controller.rb:25:in `fb_connect'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (8.0ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.8ms)
+
+
+Started GET "/connect" for 127.0.0.1 at Fri Mar 25 18:30:59 +0100 2011
+  Processing by UsersController#fb_connect as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`fb_id` = 522091142) LIMIT 1
+Completed   in 2380ms
+
+RuntimeError ():
+  app/controllers/users_controller.rb:30:in `fb_connect'
+  app/controllers/users_controller.rb:25:in `each'
+  app/controllers/users_controller.rb:25:in `each_slice'
+  app/controllers/users_controller.rb:25:in `fb_connect'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.8ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.6ms)
+
+
+Started GET "/connect" for 127.0.0.1 at Fri Mar 25 18:31:22 +0100 2011
+  Processing by UsersController#fb_connect as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`fb_id` = 522091142) LIMIT 1[0m
+Completed   in 1655ms
+
+RuntimeError ():
+  app/controllers/users_controller.rb:30:in `fb_connect'
+  app/controllers/users_controller.rb:25:in `each'
+  app/controllers/users_controller.rb:25:in `each_slice'
+  app/controllers/users_controller.rb:25:in `fb_connect'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.7ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (82.0ms)
+
+
+Started GET "/connect" for 127.0.0.1 at Fri Mar 25 18:31:25 +0100 2011
+  Processing by UsersController#fb_connect as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`fb_id` = 522091142) LIMIT 1
+Completed   in 1734ms
+
+RuntimeError ():
+  app/controllers/users_controller.rb:30:in `fb_connect'
+  app/controllers/users_controller.rb:25:in `each'
+  app/controllers/users_controller.rb:25:in `each_slice'
+  app/controllers/users_controller.rb:25:in `fb_connect'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.0ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.2ms)
+
+
+Started GET "/connect" for 127.0.0.1 at Fri Mar 25 18:31:56 +0100 2011
+  Processing by UsersController#fb_connect as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`fb_id` = 522091142) LIMIT 1[0m
+Completed   in 2473ms
+
+RuntimeError (/books?access_token=209106392449144%7C2.BOf1akOaj_XQbPmd0vK4eg__.3600.1301076000-522091142%7CVOHeOx6b-9Z_Xxhua087o7HzZ9M&ids=16157,217165,710818,803696,832655,840915,1500816,2006424,2101355,5008281):
+  app/controllers/users_controller.rb:30:in `fb_connect'
+  app/controllers/users_controller.rb:25:in `each'
+  app/controllers/users_controller.rb:25:in `each_slice'
+  app/controllers/users_controller.rb:25:in `fb_connect'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (76.9ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.0ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (87.9ms)
