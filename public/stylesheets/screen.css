@@ -1,0 +1,77 @@
+@font-face {
+  font-family: 'CaeciliaHeavy';
+  src: url('/fonts/Caecilia-Heavy.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CaeciliaRoman';
+  src: url('/fonts/Caecilia-Roman.otf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@mixin ScalaSansSC {
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  -webkit-box-shadow:inset 0 0 20px rgba(0, 0, 0, 0.25); 
+  -moz-box-shadow:inset 0 0 20px rgba(0, 0, 0, 0.25);
+  background: purple url(/images/bg_pattern_background.png) repeat top left;
+}
+
+#gradient {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(#000));; */
+}
+
+.circle {
+  border-radius: 100px;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 50%;
+  box-shadow: 0 0 200px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 200px rgba(0, 0, 0, 0.5);
+}
+
+.circle span {
+  text-align: center;
+  width: 100%;
+  display: block;
+  margin-top: 25%;
+}
+
+.circle span.title {
+  font-size: 35px;
+  color: white;
+  font-family: "CaeciliaHeavy", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: -1px;
+}
+
+.circle span.count {
+  margin-top: 5px;
+  font-size: 15px;
+  color: gray;
+  text-transform: uppercase;
+  font-family: "CaeciliaRoman", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+#you {
+  background: transparent url(/images/bg_pattern_your.png) repeat top left;
+  left: 33%;
+}
+
+#global {
+  background: transparent url(/images/bg_pattern_others.png) repeat top left;
+  left: 66%;
+}
