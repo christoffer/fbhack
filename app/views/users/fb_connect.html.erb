@@ -1,22 +1,24 @@
 <html>
+
   <head>
     <script type="text/javascript" src="javascripts/jquery.js"></script>
     <script type="text/javascript" src="javascripts/app.js"></script>
     <link rel="stylesheet" href="stylesheets/screen.css" type="text/css" /> 
   </head>
+
   <body>
+    <div class="circle" id="you">
+      <span class="title">Your friends</span>
+      <span class="count">-</span>
+    </div>
 
-  <script type="text/javascript">
+    <div class="circle" id="global">
+      <span class="title">Others' friends</span>
+      <span class="count">-</span>
+    </div>
 
-window.DATA = {
-  you: {
-    score: <%= @user.book_score %>
-  },
-  global: {
-    score: <%= User.total_book_score %>
-  }
-};
-</script>
+    <!-- facebook API -->
+    <div id="fb-root"></div>
 
 <div>
 <h1>How literary are your friends?</h1>
@@ -26,11 +28,8 @@ window.DATA = {
   <span class="title">Your friends'</span>
   <span class="count">3 books per friend</span>
 </div>
+    <script src="/javascripts/facebook.js"></script>
 
-<div class="circle" id="global">
-  <span class="title">Others' friends</span>
-  <span class="count">5 books per friend</span>
-</div>
 
 </body>
 </html>

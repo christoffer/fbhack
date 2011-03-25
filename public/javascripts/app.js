@@ -43,15 +43,15 @@ function initCircles(data) {
   setCircleSize(global, (globalRatio * varSize) + minSize);
 }
 
+function updateVisual() {
+  initCircles(window.DATA);
+  centerCircles();
+}
+
 $(function() {
   you = $('#you');
   global = $('#global');
-
-  initCircles(window.DATA);
-  centerCircles();
+  updateVisual();
 });
 
-$(window).resize(function() {
-  initCircles(window.DATA);
-  centerCircles();
-});
+$(window).resize(updateVisual);
