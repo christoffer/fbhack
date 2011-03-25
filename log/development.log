@@ -1661,3 +1661,2501 @@ ActionController::RoutingError (No route matches "/javascripts/rails.js"):
   
 
 Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Mar 25 19:12:23 +0100 2011
+  Processing by UsersController#index as HTML
+Rendered users/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at Fri Mar 25 19:12:23 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at Fri Mar 25 19:12:23 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at Fri Mar 25 19:12:23 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at Fri Mar 25 19:12:23 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/javascripts/rails.js" for 127.0.0.1 at Fri Mar 25 19:12:23 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/rails.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/connect" for 127.0.0.1 at Fri Mar 25 19:12:25 +0100 2011
+  Processing by UsersController#fb_connect as HTML
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`fb_id` = 522091142) LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT SUM(`users`.`book_count`) AS sum_id FROM `users`[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT SUM(`users`.`friend_count`) AS sum_id FROM `users`
+Rendered users/fb_connect.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 3038ms (Views: 19.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at Fri Mar 25 19:12:28 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at Fri Mar 25 19:12:28 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/javascripts/rails.js" for 127.0.0.1 at Fri Mar 25 19:12:28 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/rails.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at Fri Mar 25 19:12:28 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.4ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at Fri Mar 25 19:12:28 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/connect" for 127.0.0.1 at Fri Mar 25 19:13:30 +0100 2011
+  Processing by UsersController#fb_connect as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`fb_id` = 522091142) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT SUM(`users`.`book_count`) AS sum_id FROM `users`
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT SUM(`users`.`friend_count`) AS sum_id FROM `users`[0m
+Rendered users/fb_connect.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 1964ms (Views: 12.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at Fri Mar 25 19:13:32 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at Fri Mar 25 19:13:32 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at Fri Mar 25 19:13:32 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at Fri Mar 25 19:13:32 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.0ms)
+
+
+Started GET "/javascripts/rails.js" for 127.0.0.1 at Fri Mar 25 19:13:32 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/rails.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/connect" for 127.0.0.1 at Fri Mar 25 19:13:40 +0100 2011
+  Processing by UsersController#fb_connect as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`fb_id` = 522091142) LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT SUM(`users`.`book_count`) AS sum_id FROM `users`[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT SUM(`users`.`friend_count`) AS sum_id FROM `users`
+Rendered users/fb_connect.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 2101ms (Views: 11.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at Fri Mar 25 19:13:42 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at Fri Mar 25 19:13:42 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.5ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at Fri Mar 25 19:13:42 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/javascripts/rails.js" for 127.0.0.1 at Fri Mar 25 19:13:42 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/rails.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.5ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at Fri Mar 25 19:13:42 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/connect" for 127.0.0.1 at Fri Mar 25 19:13:46 +0100 2011
+  Processing by UsersController#fb_connect as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`fb_id` = 522091142) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT SUM(`users`.`book_count`) AS sum_id FROM `users`
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT SUM(`users`.`friend_count`) AS sum_id FROM `users`[0m
+Rendered users/fb_connect.html.erb within layouts/application (85.2ms)
+Completed 200 OK in 1996ms (Views: 89.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/connect" for 127.0.0.1 at Fri Mar 25 19:14:22 +0100 2011
+  Processing by UsersController#fb_connect as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`fb_id` = 522091142) LIMIT 1
+Rendered users/fb_connect.html.erb within layouts/application (6.0ms)
+Completed   in 2770ms
+
+ActionView::Template::Error (0):
+    10: 
+    11: window.DATA = {
+    12:   you: {
+    13:     score: <%= @user.book_score %>
+    14:   },
+    15:   global: {
+    16:     score: <%= User.total_book_score %>
+  app/models/user.rb:9:in `book_score'
+  app/views/users/fb_connect.html.erb:13:in `_app_views_users_fb_connect_html_erb__1009087223_2177660480_0'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.2ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (14.4ms)
+
+
+Started GET "/connect" for 127.0.0.1 at Fri Mar 25 19:15:03 +0100 2011
+  Processing by UsersController#fb_connect as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`fb_id` = 522091142) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT SUM(`users`.`book_count`) AS sum_id FROM `users`
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT SUM(`users`.`friend_count`) AS sum_id FROM `users`[0m
+Rendered users/fb_connect.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 2626ms (Views: 11.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at Fri Mar 25 19:15:06 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at Fri Mar 25 19:15:06 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at Fri Mar 25 19:15:06 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at Fri Mar 25 19:15:06 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/javascripts/rails.js" for 127.0.0.1 at Fri Mar 25 19:15:06 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/rails.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/connect" for 127.0.0.1 at Fri Mar 25 19:15:13 +0100 2011
+  Processing by UsersController#fb_connect as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`fb_id` = 522091142) LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT SUM(`users`.`book_count`) AS sum_id FROM `users`[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT SUM(`users`.`friend_count`) AS sum_id FROM `users`
+Rendered users/fb_connect.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 1977ms (Views: 10.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at Fri Mar 25 19:15:15 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at Fri Mar 25 19:15:15 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (4.9ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at Fri Mar 25 19:15:15 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at Fri Mar 25 19:15:15 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/javascripts/rails.js" for 127.0.0.1 at Fri Mar 25 19:15:15 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/rails.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/connect" for 127.0.0.1 at Fri Mar 25 19:15:29 +0100 2011
+  Processing by UsersController#fb_connect as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`fb_id` = 522091142) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT SUM(`users`.`book_count`) AS sum_id FROM `users`
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT SUM(`users`.`friend_count`) AS sum_id FROM `users`[0m
+Rendered users/fb_connect.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 2425ms (Views: 10.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at Fri Mar 25 19:15:32 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at Fri Mar 25 19:15:32 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/javascripts/rails.js" for 127.0.0.1 at Fri Mar 25 19:15:32 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/rails.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at Fri Mar 25 19:15:32 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at Fri Mar 25 19:15:32 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.0ms)
+
+
+Started GET "/connect" for 127.0.0.1 at Fri Mar 25 19:15:41 +0100 2011
+  Processing by UsersController#fb_connect as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`fb_id` = 522091142) LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT SUM(`users`.`book_count`) AS sum_id FROM `users`[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT SUM(`users`.`friend_count`) AS sum_id FROM `users`
+Rendered users/fb_connect.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 2188ms (Views: 10.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at Fri Mar 25 19:15:44 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.0ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at Fri Mar 25 19:15:44 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/javascripts/rails.js" for 127.0.0.1 at Fri Mar 25 19:15:44 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/rails.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at Fri Mar 25 19:15:44 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at Fri Mar 25 19:15:44 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/connect" for 127.0.0.1 at Fri Mar 25 19:16:04 +0100 2011
+  Processing by UsersController#fb_connect as HTML
+Completed   in 4ms
+
+SyntaxError (/Users/henrik/Projects/fbooks/app/models/user.rb:8: syntax error, unexpected ')', expecting kEND
+    ((self.book_count.to_f / self.friend_count).to_f * 100)).to_i
+                                                            ^):
+  app/controllers/users_controller.rb:21:in `fb_connect'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.1ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.0ms)
+
+
+Started GET "/connect" for 127.0.0.1 at Fri Mar 25 19:16:19 +0100 2011
+  Processing by UsersController#fb_connect as HTML
+Completed   in 3ms
+
+SyntaxError (/Users/henrik/Projects/fbooks/app/models/user.rb:8: syntax error, unexpected ')', expecting kEND
+    (self.book_count.to_f / self.friend_count).to_f * 100).to_i
+                                                          ^):
+  app/controllers/users_controller.rb:21:in `fb_connect'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.9ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.8ms)
+
+
+Started GET "/connect" for 127.0.0.1 at Fri Mar 25 19:16:25 +0100 2011
+  Processing by UsersController#fb_connect as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`fb_id` = 522091142) LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT SUM(`users`.`book_count`) AS sum_id FROM `users`
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT SUM(`users`.`friend_count`) AS sum_id FROM `users`[0m
+Rendered users/fb_connect.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 2285ms (Views: 11.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at Fri Mar 25 19:16:27 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at Fri Mar 25 19:16:27 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at Fri Mar 25 19:16:27 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.7ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at Fri Mar 25 19:16:27 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/javascripts/rails.js" for 127.0.0.1 at Fri Mar 25 19:16:27 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/rails.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/connect" for 127.0.0.1 at Fri Mar 25 19:16:47 +0100 2011
+  Processing by UsersController#fb_connect as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`fb_id` = 522091142) LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT SUM(`users`.`book_count`) AS sum_id FROM `users`[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT SUM(`users`.`friend_count`) AS sum_id FROM `users`
+Rendered users/fb_connect.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 2319ms (Views: 10.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at Fri Mar 25 19:16:50 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at Fri Mar 25 19:16:50 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/javascripts/rails.js" for 127.0.0.1 at Fri Mar 25 19:16:50 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/rails.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.4ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at Fri Mar 25 19:16:50 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.8ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at Fri Mar 25 19:16:50 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/connect" for 127.0.0.1 at Fri Mar 25 19:17:44 +0100 2011
+  Processing by UsersController#fb_connect as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`fb_id` = 522091142) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT SUM(`users`.`book_count`) AS sum_id FROM `users`
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT SUM(`users`.`friend_count`) AS sum_id FROM `users`[0m
+Rendered users/fb_connect.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 2967ms (Views: 10.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at Fri Mar 25 19:17:47 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at Fri Mar 25 19:17:47 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at Fri Mar 25 19:17:47 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at Fri Mar 25 19:17:47 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/javascripts/rails.js" for 127.0.0.1 at Fri Mar 25 19:17:47 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/rails.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/connect" for 127.0.0.1 at Fri Mar 25 19:18:07 +0100 2011
+  Processing by UsersController#fb_connect as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`fb_id` = 522091142) LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT SUM(`users`.`book_count`) AS sum_id FROM `users`[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT SUM(`users`.`friend_count`) AS sum_id FROM `users`
+Rendered users/fb_connect.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 1869ms (Views: 10.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at Fri Mar 25 19:18:09 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at Fri Mar 25 19:18:09 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.9ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at Fri Mar 25 19:18:09 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at Fri Mar 25 19:18:09 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/javascripts/rails.js" for 127.0.0.1 at Fri Mar 25 19:18:09 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/rails.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/connect" for 127.0.0.1 at Fri Mar 25 19:18:33 +0100 2011
+  Processing by UsersController#fb_connect as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`fb_id` = 522091142) LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT SUM(`users`.`book_count`) AS sum_id FROM `users`
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT SUM(`users`.`friend_count`) AS sum_id FROM `users`[0m
+Rendered users/fb_connect.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 2501ms (Views: 10.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at Fri Mar 25 19:18:36 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at Fri Mar 25 19:18:36 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/javascripts/rails.js" for 127.0.0.1 at Fri Mar 25 19:18:36 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/rails.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at Fri Mar 25 19:18:36 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at Fri Mar 25 19:18:36 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/connect" for 127.0.0.1 at Fri Mar 25 19:18:50 +0100 2011
+  Processing by UsersController#fb_connect as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`fb_id` = 522091142) LIMIT 1
+  [1m[36mSQL (3.7ms)[0m  [1mSELECT SUM(`users`.`book_count`) AS sum_id FROM `users`[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT SUM(`users`.`friend_count`) AS sum_id FROM `users`
+Rendered users/fb_connect.html.erb within layouts/application (30.9ms)
+Completed 200 OK in 1941ms (Views: 32.1ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at Fri Mar 25 19:18:52 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at Fri Mar 25 19:18:52 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at Fri Mar 25 19:18:52 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at Fri Mar 25 19:18:52 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.6ms)
+
+
+Started GET "/javascripts/rails.js" for 127.0.0.1 at Fri Mar 25 19:18:52 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/rails.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Mar 25 19:19:11 +0100 2011
+  Processing by UsersController#index as HTML
+Rendered users/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at Fri Mar 25 19:19:11 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at Fri Mar 25 19:19:11 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at Fri Mar 25 19:19:11 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/javascripts/rails.js" for 127.0.0.1 at Fri Mar 25 19:19:11 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/rails.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at Fri Mar 25 19:19:11 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/connect" for 127.0.0.1 at Fri Mar 25 19:19:12 +0100 2011
+  Processing by UsersController#fb_connect as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`fb_id` = 522091142) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT SUM(`users`.`book_count`) AS sum_id FROM `users`
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT SUM(`users`.`friend_count`) AS sum_id FROM `users`[0m
+Rendered users/fb_connect.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 2546ms (Views: 11.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at Fri Mar 25 19:19:15 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at Fri Mar 25 19:19:15 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/javascripts/rails.js" for 127.0.0.1 at Fri Mar 25 19:19:15 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/rails.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at Fri Mar 25 19:19:15 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at Fri Mar 25 19:19:15 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.9ms)
+
+
+Started GET "/connect" for 127.0.0.1 at Fri Mar 25 19:19:58 +0100 2011
+  Processing by UsersController#fb_connect as HTML
+  [1m[35mUser Load (0.9ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`fb_id` = 522091142) LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT SUM(`users`.`book_count`) AS sum_id FROM `users`[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT SUM(`users`.`friend_count`) AS sum_id FROM `users`
+Rendered users/fb_connect.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 2431ms (Views: 10.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at Fri Mar 25 19:20:01 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at Fri Mar 25 19:20:01 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at Fri Mar 25 19:20:01 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at Fri Mar 25 19:20:01 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/javascripts/rails.js" for 127.0.0.1 at Fri Mar 25 19:20:01 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/rails.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/connect" for 127.0.0.1 at Fri Mar 25 19:20:13 +0100 2011
+  Processing by UsersController#fb_connect as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`fb_id` = 522091142) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT SUM(`users`.`book_count`) AS sum_id FROM `users`
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT SUM(`users`.`friend_count`) AS sum_id FROM `users`[0m
+Rendered users/fb_connect.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 1808ms (Views: 10.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at Fri Mar 25 19:20:15 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at Fri Mar 25 19:20:15 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at Fri Mar 25 19:20:15 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at Fri Mar 25 19:20:15 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/javascripts/rails.js" for 127.0.0.1 at Fri Mar 25 19:20:15 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/rails.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/connect" for 127.0.0.1 at Fri Mar 25 19:20:33 +0100 2011
+  Processing by UsersController#fb_connect as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`fb_id` = 522091142) LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT SUM(`users`.`book_count`) AS sum_id FROM `users`[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT SUM(`users`.`friend_count`) AS sum_id FROM `users`
+Rendered users/fb_connect.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 2389ms (Views: 11.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at Fri Mar 25 19:20:36 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at Fri Mar 25 19:20:36 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at Fri Mar 25 19:20:36 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/javascripts/rails.js" for 127.0.0.1 at Fri Mar 25 19:20:36 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/rails.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.5ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at Fri Mar 25 19:20:36 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/connect" for 127.0.0.1 at Fri Mar 25 19:20:44 +0100 2011
+  Processing by UsersController#fb_connect as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`fb_id` = 522091142) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT SUM(`users`.`book_count`) AS sum_id FROM `users`
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT SUM(`users`.`friend_count`) AS sum_id FROM `users`[0m
+Rendered users/fb_connect.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 1881ms (Views: 11.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/javascripts/rails.js" for 127.0.0.1 at Fri Mar 25 19:20:46 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/rails.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at Fri Mar 25 19:20:46 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at Fri Mar 25 19:20:46 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at Fri Mar 25 19:20:46 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at Fri Mar 25 19:20:46 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/connect" for 127.0.0.1 at Fri Mar 25 19:21:30 +0100 2011
+  Processing by UsersController#fb_connect as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`fb_id` = 522091142) LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT SUM(`users`.`book_count`) AS sum_id FROM `users`[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT SUM(`users`.`friend_count`) AS sum_id FROM `users`
+Rendered users/fb_connect.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 2703ms (Views: 10.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at Fri Mar 25 19:21:33 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at Fri Mar 25 19:21:33 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at Fri Mar 25 19:21:33 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at Fri Mar 25 19:21:33 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/javascripts/rails.js" for 127.0.0.1 at Fri Mar 25 19:21:33 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/rails.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.9ms)
+
+
+Started GET "/connect" for 127.0.0.1 at Fri Mar 25 19:22:06 +0100 2011
+  Processing by UsersController#fb_connect as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`fb_id` = 522091142) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT SUM(`users`.`book_count`) AS sum_id FROM `users`
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT SUM(`users`.`friend_count`) AS sum_id FROM `users`[0m
+Rendered users/fb_connect.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 2280ms (Views: 10.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at Fri Mar 25 19:22:08 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at Fri Mar 25 19:22:08 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at Fri Mar 25 19:22:08 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at Fri Mar 25 19:22:08 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/javascripts/rails.js" for 127.0.0.1 at Fri Mar 25 19:22:08 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/rails.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+
+Started GET "/connect" for 127.0.0.1 at Fri Mar 25 19:22:14 +0100 2011
+  Processing by UsersController#fb_connect as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`fb_id` = 522091142) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT SUM(`users`.`book_count`) AS sum_id FROM `users`[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT SUM(`users`.`friend_count`) AS sum_id FROM `users`
+Rendered users/fb_connect.html.erb within layouts/application (84.2ms)
+Completed 200 OK in 2548ms (Views: 88.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at Fri Mar 25 19:22:17 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/javascripts/rails.js" for 127.0.0.1 at Fri Mar 25 19:22:17 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/rails.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at Fri Mar 25 19:22:17 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at Fri Mar 25 19:22:17 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at Fri Mar 25 19:22:17 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/connect" for 127.0.0.1 at Fri Mar 25 19:22:28 +0100 2011
+  Processing by UsersController#fb_connect as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`fb_id` = 522091142) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT SUM(`users`.`book_count`) AS sum_id FROM `users`
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT SUM(`users`.`friend_count`) AS sum_id FROM `users`[0m
+Rendered users/fb_connect.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 1961ms (Views: 11.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at Fri Mar 25 19:22:30 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at Fri Mar 25 19:22:30 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at Fri Mar 25 19:22:30 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at Fri Mar 25 19:22:30 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/javascripts/rails.js" for 127.0.0.1 at Fri Mar 25 19:22:30 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/rails.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/connect" for 127.0.0.1 at Fri Mar 25 19:22:40 +0100 2011
+  Processing by UsersController#fb_connect as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`fb_id` = 522091142) LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT SUM(`users`.`book_count`) AS sum_id FROM `users`[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT SUM(`users`.`friend_count`) AS sum_id FROM `users`
+Rendered users/fb_connect.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 1838ms (Views: 10.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at Fri Mar 25 19:22:42 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/javascripts/rails.js" for 127.0.0.1 at Fri Mar 25 19:22:42 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/rails.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at Fri Mar 25 19:22:42 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (76.9ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at Fri Mar 25 19:22:42 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at Fri Mar 25 19:22:42 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/connect" for 127.0.0.1 at Fri Mar 25 19:23:02 +0100 2011
+  Processing by UsersController#fb_connect as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`fb_id` = 522091142) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT SUM(`users`.`book_count`) AS sum_id FROM `users`
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT SUM(`users`.`friend_count`) AS sum_id FROM `users`[0m
+Rendered users/fb_connect.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 2436ms (Views: 10.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at Fri Mar 25 19:23:05 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at Fri Mar 25 19:23:05 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.5ms)
+
+
+Started GET "/javascripts/rails.js" for 127.0.0.1 at Fri Mar 25 19:23:05 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/rails.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at Fri Mar 25 19:23:05 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at Fri Mar 25 19:23:05 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/connect" for 127.0.0.1 at Fri Mar 25 19:23:13 +0100 2011
+  Processing by UsersController#fb_connect as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`fb_id` = 522091142) LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT SUM(`users`.`book_count`) AS sum_id FROM `users`[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT SUM(`users`.`friend_count`) AS sum_id FROM `users`
+Rendered users/fb_connect.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 2084ms (Views: 11.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at Fri Mar 25 19:23:15 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/javascripts/rails.js" for 127.0.0.1 at Fri Mar 25 19:23:15 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/rails.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at Fri Mar 25 19:23:15 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.4ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at Fri Mar 25 19:23:15 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at Fri Mar 25 19:23:15 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/connect" for 127.0.0.1 at Fri Mar 25 19:23:38 +0100 2011
+  Processing by UsersController#fb_connect as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`fb_id` = 522091142) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT SUM(`users`.`book_count`) AS sum_id FROM `users`
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT SUM(`users`.`friend_count`) AS sum_id FROM `users`[0m
+Rendered users/fb_connect.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 2826ms (Views: 11.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at Fri Mar 25 19:23:41 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at Fri Mar 25 19:23:41 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at Fri Mar 25 19:23:41 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.1ms)
+
+
+Started GET "/javascripts/rails.js" for 127.0.0.1 at Fri Mar 25 19:23:41 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/rails.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at Fri Mar 25 19:23:41 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/connect" for 127.0.0.1 at Fri Mar 25 19:25:11 +0100 2011
+  Processing by UsersController#fb_connect as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`fb_id` = 522091142) LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT SUM(`users`.`book_count`) AS sum_id FROM `users`[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT SUM(`users`.`friend_count`) AS sum_id FROM `users`
+Rendered users/fb_connect.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 2410ms (Views: 12.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Mar 25 19:25:14 +0100 2011
+  Processing by UsersController#index as HTML
+Rendered users/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 8ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at Fri Mar 25 19:25:14 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/javascripts/rails.js" for 127.0.0.1 at Fri Mar 25 19:25:14 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/rails.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at Fri Mar 25 19:25:14 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at Fri Mar 25 19:25:14 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at Fri Mar 25 19:25:14 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/connect" for 127.0.0.1 at Fri Mar 25 19:25:23 +0100 2011
+  Processing by UsersController#fb_connect as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`fb_id` = 522091142) LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT SUM(`users`.`book_count`) AS sum_id FROM `users`
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT SUM(`users`.`friend_count`) AS sum_id FROM `users`[0m
+Rendered users/fb_connect.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 2093ms (Views: 11.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/javascripts/rails.js" for 127.0.0.1 at Fri Mar 25 19:25:25 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/rails.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at Fri Mar 25 19:25:25 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at Fri Mar 25 19:25:25 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at Fri Mar 25 19:25:25 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at Fri Mar 25 19:25:25 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/connect" for 127.0.0.1 at Fri Mar 25 19:25:57 +0100 2011
+  Processing by UsersController#fb_connect as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`fb_id` = 522091142) LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT SUM(`users`.`book_count`) AS sum_id FROM `users`[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT SUM(`users`.`friend_count`) AS sum_id FROM `users`
+Rendered users/fb_connect.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 2445ms (Views: 92.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at Fri Mar 25 19:25:59 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at Fri Mar 25 19:25:59 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at Fri Mar 25 19:25:59 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at Fri Mar 25 19:25:59 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/javascripts/rails.js" for 127.0.0.1 at Fri Mar 25 19:25:59 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/rails.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/connect" for 127.0.0.1 at Fri Mar 25 19:26:33 +0100 2011
+  Processing by UsersController#fb_connect as HTML
+  [1m[36mUser Load (13.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`fb_id` = 522091142) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT SUM(`users`.`book_count`) AS sum_id FROM `users`
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT SUM(`users`.`friend_count`) AS sum_id FROM `users`[0m
+Rendered users/fb_connect.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 2044ms (Views: 10.1ms | ActiveRecord: 13.7ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at Fri Mar 25 19:26:35 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at Fri Mar 25 19:26:35 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at Fri Mar 25 19:26:35 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at Fri Mar 25 19:26:35 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/javascripts/rails.js" for 127.0.0.1 at Fri Mar 25 19:26:35 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/rails.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.7ms)
+
+
+Started GET "/connect" for 127.0.0.1 at Fri Mar 25 19:26:46 +0100 2011
+  Processing by UsersController#fb_connect as HTML
+  [1m[35mUser Load (4.3ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`fb_id` = 522091142) LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT SUM(`users`.`book_count`) AS sum_id FROM `users`[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT SUM(`users`.`friend_count`) AS sum_id FROM `users`
+Rendered users/fb_connect.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 2449ms (Views: 11.0ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at Fri Mar 25 19:26:48 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)
+
+
+Started GET "/javascripts/rails.js" for 127.0.0.1 at Fri Mar 25 19:26:48 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/rails.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at Fri Mar 25 19:26:48 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at Fri Mar 25 19:26:49 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at Fri Mar 25 19:26:49 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/connect" for 127.0.0.1 at Fri Mar 25 19:26:54 +0100 2011
+  Processing by UsersController#fb_connect as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`fb_id` = 522091142) LIMIT 1[0m
+  [1m[35mSQL (0.7ms)[0m  SELECT SUM(`users`.`book_count`) AS sum_id FROM `users`
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT SUM(`users`.`friend_count`) AS sum_id FROM `users`[0m
+Rendered users/fb_connect.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 1579ms (Views: 11.4ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at Fri Mar 25 19:26:56 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at Fri Mar 25 19:26:56 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at Fri Mar 25 19:26:56 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/javascripts/rails.js" for 127.0.0.1 at Fri Mar 25 19:26:56 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/rails.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at Fri Mar 25 19:26:56 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Mar 25 19:27:40 +0100 2011
+  Processing by UsersController#index as HTML
+Rendered users/index.html.erb within layouts/application (26.4ms)
+Completed 200 OK in 38ms (Views: 35.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at Fri Mar 25 19:27:40 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (10.2ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at Fri Mar 25 19:27:40 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.7ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at Fri Mar 25 19:27:40 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at Fri Mar 25 19:27:40 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/javascripts/rails.js" for 127.0.0.1 at Fri Mar 25 19:27:40 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/rails.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/connect" for 127.0.0.1 at Fri Mar 25 19:27:43 +0100 2011
+  Processing by UsersController#fb_connect as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`fb_id` = 522091142) LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT SUM(`users`.`book_count`) AS sum_id FROM `users`[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT SUM(`users`.`friend_count`) AS sum_id FROM `users`
+Rendered users/fb_connect.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 2185ms (Views: 11.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at Fri Mar 25 19:27:45 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at Fri Mar 25 19:27:45 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at Fri Mar 25 19:27:45 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/javascripts/rails.js" for 127.0.0.1 at Fri Mar 25 19:27:45 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/rails.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at Fri Mar 25 19:27:45 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Mar 25 19:28:58 +0100 2011
+  Processing by UsersController#index as HTML
+Rendered users/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at Fri Mar 25 19:28:58 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at Fri Mar 25 19:28:58 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at Fri Mar 25 19:28:58 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at Fri Mar 25 19:28:58 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/javascripts/rails.js" for 127.0.0.1 at Fri Mar 25 19:28:58 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/rails.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/connect" for 127.0.0.1 at Fri Mar 25 19:29:00 +0100 2011
+  Processing by UsersController#fb_connect as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`fb_id` = 522091142) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT SUM(`users`.`book_count`) AS sum_id FROM `users`
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT SUM(`users`.`friend_count`) AS sum_id FROM `users`[0m
+Rendered users/fb_connect.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 2613ms (Views: 10.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at Fri Mar 25 19:29:03 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at Fri Mar 25 19:29:03 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at Fri Mar 25 19:29:03 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at Fri Mar 25 19:29:03 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/javascripts/rails.js" for 127.0.0.1 at Fri Mar 25 19:29:03 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/rails.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/connect" for 127.0.0.1 at Fri Mar 25 19:31:07 +0100 2011
+  Processing by UsersController#fb_connect as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`fb_id` = 522091142) LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT SUM(`users`.`book_count`) AS sum_id FROM `users`[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT SUM(`users`.`friend_count`) AS sum_id FROM `users`
+Rendered users/fb_connect.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 2419ms (Views: 13.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at Fri Mar 25 19:31:09 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at Fri Mar 25 19:31:09 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at Fri Mar 25 19:31:09 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at Fri Mar 25 19:31:09 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/javascripts/rails.js" for 127.0.0.1 at Fri Mar 25 19:31:09 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/rails.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/connect" for 127.0.0.1 at Fri Mar 25 19:31:33 +0100 2011
+  Processing by UsersController#fb_connect as HTML
+  [1m[36mUser Load (1.7ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`fb_id` = 522091142) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT SUM(`users`.`book_count`) AS sum_id FROM `users`
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT SUM(`users`.`friend_count`) AS sum_id FROM `users`[0m
+Rendered users/fb_connect.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 1788ms (Views: 10.6ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at Fri Mar 25 19:31:35 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.8ms)
+
+
+Started GET "/javascripts/rails.js" for 127.0.0.1 at Fri Mar 25 19:31:35 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/rails.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at Fri Mar 25 19:31:35 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at Fri Mar 25 19:31:35 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at Fri Mar 25 19:31:35 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/connect" for 127.0.0.1 at Fri Mar 25 19:31:40 +0100 2011
+  Processing by UsersController#fb_connect as HTML
+  [1m[35mUser Load (28.7ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`fb_id` = 522091142) LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT SUM(`users`.`book_count`) AS sum_id FROM `users`[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT SUM(`users`.`friend_count`) AS sum_id FROM `users`
+Rendered users/fb_connect.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 1821ms (Views: 11.2ms | ActiveRecord: 29.2ms)
+
+
+Started GET "/javascripts/rails.js" for 127.0.0.1 at Fri Mar 25 19:31:41 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/rails.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at Fri Mar 25 19:31:42 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at Fri Mar 25 19:31:42 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at Fri Mar 25 19:31:42 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at Fri Mar 25 19:31:42 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.3ms)
+
+
+Started GET "/connect" for 127.0.0.1 at Fri Mar 25 19:32:20 +0100 2011
+  Processing by UsersController#fb_connect as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`fb_id` = 522091142) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT SUM(`users`.`book_count`) AS sum_id FROM `users`
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT SUM(`users`.`friend_count`) AS sum_id FROM `users`[0m
+Rendered users/fb_connect.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 2368ms (Views: 10.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at Fri Mar 25 19:32:23 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at Fri Mar 25 19:32:23 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at Fri Mar 25 19:32:23 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at Fri Mar 25 19:32:23 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/javascripts/rails.js" for 127.0.0.1 at Fri Mar 25 19:32:23 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/rails.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/connect" for 127.0.0.1 at Fri Mar 25 19:32:38 +0100 2011
+  Processing by UsersController#fb_connect as HTML
+  [1m[35mUser Load (1.4ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`fb_id` = 522091142) LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT SUM(`users`.`book_count`) AS sum_id FROM `users`[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT SUM(`users`.`friend_count`) AS sum_id FROM `users`
+Rendered users/fb_connect.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 1978ms (Views: 10.8ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at Fri Mar 25 19:32:40 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at Fri Mar 25 19:32:40 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at Fri Mar 25 19:32:40 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at Fri Mar 25 19:32:40 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/javascripts/rails.js" for 127.0.0.1 at Fri Mar 25 19:32:40 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/rails.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/connect" for 127.0.0.1 at Fri Mar 25 19:33:00 +0100 2011
+  Processing by UsersController#fb_connect as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`fb_id` = 522091142) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT SUM(`users`.`book_count`) AS sum_id FROM `users`
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT SUM(`users`.`friend_count`) AS sum_id FROM `users`[0m
+Rendered users/fb_connect.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 2780ms (Views: 11.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at Fri Mar 25 19:33:03 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at Fri Mar 25 19:33:03 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/javascripts/rails.js" for 127.0.0.1 at Fri Mar 25 19:33:03 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/rails.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at Fri Mar 25 19:33:03 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.4ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at Fri Mar 25 19:33:03 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/connect" for 127.0.0.1 at Fri Mar 25 19:33:16 +0100 2011
+  Processing by UsersController#fb_connect as HTML
+  [1m[35mUser Load (0.8ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`fb_id` = 522091142) LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT SUM(`users`.`book_count`) AS sum_id FROM `users`[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT SUM(`users`.`friend_count`) AS sum_id FROM `users`
+Rendered users/fb_connect.html.erb within layouts/application (80.8ms)
+Completed 200 OK in 1575ms (Views: 85.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at Fri Mar 25 19:33:18 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at Fri Mar 25 19:33:18 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/javascripts/rails.js" for 127.0.0.1 at Fri Mar 25 19:33:18 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/rails.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at Fri Mar 25 19:33:18 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at Fri Mar 25 19:33:18 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.1ms)
+
+
+Started GET "/connect" for 127.0.0.1 at Fri Mar 25 19:35:06 +0100 2011
+  Processing by UsersController#fb_connect as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`fb_id` = 522091142) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT SUM(`users`.`book_count`) AS sum_id FROM `users`
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT SUM(`users`.`friend_count`) AS sum_id FROM `users`[0m
+Rendered users/fb_connect.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 2457ms (Views: 10.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at Fri Mar 25 19:35:09 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at Fri Mar 25 19:35:09 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at Fri Mar 25 19:35:09 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at Fri Mar 25 19:35:09 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.4ms)
+
+
+Started GET "/javascripts/rails.js" for 127.0.0.1 at Fri Mar 25 19:35:09 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/rails.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/connect" for 127.0.0.1 at Fri Mar 25 19:36:30 +0100 2011
+  Processing by UsersController#fb_connect as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`fb_id` = 522091142) LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT SUM(`users`.`book_count`) AS sum_id FROM `users`[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT SUM(`users`.`friend_count`) AS sum_id FROM `users`
+Rendered users/fb_connect.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 2463ms (Views: 11.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at Fri Mar 25 19:36:33 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.4ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at Fri Mar 25 19:36:33 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.9ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at Fri Mar 25 19:36:33 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at Fri Mar 25 19:36:33 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/javascripts/rails.js" for 127.0.0.1 at Fri Mar 25 19:36:33 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/rails.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Mar 25 20:03:18 +0100 2011
+  Processing by UsersController#index as HTML
+Rendered users/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at Fri Mar 25 20:03:18 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at Fri Mar 25 20:03:18 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at Fri Mar 25 20:03:18 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at Fri Mar 25 20:03:18 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/javascripts/rails.js" for 127.0.0.1 at Fri Mar 25 20:03:18 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/rails.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Mar 25 20:03:24 +0100 2011
+  Processing by UsersController#index as HTML
+Rendered users/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at Fri Mar 25 20:03:24 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at Fri Mar 25 20:03:24 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at Fri Mar 25 20:03:24 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at Fri Mar 25 20:03:24 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/javascripts/rails.js" for 127.0.0.1 at Fri Mar 25 20:03:24 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/rails.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/connect" for 127.0.0.1 at Fri Mar 25 20:03:28 +0100 2011
+  Processing by UsersController#fb_connect as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`fb_id` = 522091142) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT SUM(`users`.`book_count`) AS sum_id FROM `users`
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT SUM(`users`.`friend_count`) AS sum_id FROM `users`[0m
+Rendered users/fb_connect.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 1634ms (Views: 10.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/javascripts/dragdrop.js" for 127.0.0.1 at Fri Mar 25 20:03:30 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/dragdrop.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/javascripts/rails.js" for 127.0.0.1 at Fri Mar 25 20:03:30 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/rails.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/javascripts/prototype.js" for 127.0.0.1 at Fri Mar 25 20:03:30 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (6.7ms)
+
+
+Started GET "/javascripts/effects.js" for 127.0.0.1 at Fri Mar 25 20:03:30 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/javascripts/controls.js" for 127.0.0.1 at Fri Mar 25 20:03:30 +0100 2011
+
+ActionController::RoutingError (No route matches "/javascripts/controls.js"):
+  
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.4ms)

@@ -31,13 +31,13 @@ function setCircleSize(el, size) {
 function initCircles(data) {
   var baseSize = window.innerHeight,
       varSize = baseSize / 2,
-      minSize = baseSize / 4;
+      minSize = baseSize / 3;
   var total = data.you.score + data.global.score;
   var youRatio = data.you.score / total,
       globalRatio = 1 - youRatio;
 
-  you.find('span.count').html(data.you.score + ' books per person');
-  global.find('span.count').html(data.global.score + ' books per person');
+  you.find('span.count').html('Your friends\' literary score is '+data.you.score);
+  global.find('span.count').html('Average is ' + data.global.score);
 
   setCircleSize(you, (youRatio * varSize) + minSize);
   setCircleSize(global, (globalRatio * varSize) + minSize);
