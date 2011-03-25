@@ -1,7 +1,6 @@
 class UsersController < ApplicationController
   require 'httparty'
   
-  
   def index
   end
 
@@ -46,5 +45,12 @@ class UsersController < ApplicationController
       end
 
   end
+  
+  def update
+    @user = User.find(params[:id])
+    @user.update_attributes!(params[:user])
+    head :ok
+  end
+  
 
 end
