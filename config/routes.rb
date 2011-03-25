@@ -1,4 +1,9 @@
 Fbhack::Application.routes.draw do
+  match 'connect', :to => "users#fb_connect"
+  root :to => "users#index"
+  
+  
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
