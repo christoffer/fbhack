@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <script type="text/javascript" src="javascripts/jquery.js"></script>
+    <script type="text/javascript" src="javascripts/app.js"></script>
+    <link rel="stylesheet" href="stylesheets/screen.css" type="text/css" /> 
+  </head>
+  <body>
+
+  <script type="text/javascript">
+
+window.DATA = {
+  you: {
+    score: <%= @user.book_score %>
+  },
+  global: {
+    score: <%= User.total_book_score %>
+  }
+};
+</script>
+
+<div id="gradient"></div>
+
+<div class="circle" id="you">
+  <span class="title">Your friends</span>
+  <span class="count">3 books per friend</span>
+</div>
+
+<div class="circle" id="global">
+  <span class="title">Others' friends</span>
+  <span class="count">5 books per friend</span>
+</div>
+
+</body>
+</html>
+

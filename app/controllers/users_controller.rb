@@ -3,6 +3,12 @@ class UsersController < ApplicationController
   
   def index
   end
+
+  def show
+    @user = User.find(params[:id])
+    @you_score = @user.book_score
+    @global_score = User.total_book_score
+  end
   
   def fb_connect
       @fb_info = MiniFB.parse_cookie_information('209106392449144', cookies) # some users may have to use their API rather than the app. ID.
