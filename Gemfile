@@ -8,6 +8,7 @@ gem 'rails', '3.0.3'
 gem 'json'
 gem 'mysql2'
 gem 'mini_fb'
+gem 'httparty'
 
 # Use unicorn as the web server
 # gem 'unicorn'

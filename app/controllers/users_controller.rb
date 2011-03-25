@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
-  require 'open-uri'
+  require 'httparty'
+  
   
   def index
   end
@@ -10,28 +11,30 @@ class UsersController < ApplicationController
       @fb_uid = @fb_info['uid']
       @fb_access_token = @fb_info['access_token']
 
-      http = Net::HTTP.new("graph.facebook.com")
-      http.use_ssl = true
-
-
       if MiniFB.verify_cookie_signature('209106392449144', "fc6cfb76f24a937d5ab6161e468b24af", cookies)
         @user = User.find_or_create_by_fb_id(@fb_uid)
         @fb = MiniFB::OAuthSession.new(@fb_access_token, 'en_US')
         friends = @fb.get('me/friends').data.collect {|f| f.id }
         
         ix = 0
-        books = 0
+        book_count = 0
         
-        friends.each_slice(10) do |a|
-          ids = a.join(',')
+        #friends.each_slice(20) do |a|
+        #  ids = a.join(',')
 
-          params = {:access_token => @fb_access_token}.to_query
-          request = Net::HTTP::Get.new("/books?#{params}&ids=#{ids}")
-          raise "#{request.path}"
-          books = ActiveSupport::JSON.decode(request.body)
+        #  params = {:access_token => @fb_access_token}.to_query          
+         # books = HTTParty.get("https://graph.facebook.com/books?#{params}&ids=#{ids}")
           
-        end
-                
+         # books.each do |b|
+            
+         #   book_count += b[1]['data'].size
+         # end
+                              
+        #end
+        
+        #@user.friend_count = friends.size
+        #@user.book_count = book_count
+       # @user.save
       else
         redirect_to root_path
       end

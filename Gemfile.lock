@@ -30,9 +30,12 @@ GEM
     activesupport (3.0.3)
     arel (2.0.9)
     builder (2.1.2)
+    crack (0.1.6)
     erubis (2.6.6)
       abstract (>= 1.0.0)
     hashie (0.4.0)
+    httparty (0.5.2)
+      crack (= 0.1.6)
     i18n (0.5.0)
     json (1.5.1)
     mail (2.2.15)
@@ -76,6 +79,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  httparty
   json
   mini_fb
   mysql2
