@@ -32,6 +32,7 @@ function initCircles(data) {
   var baseSize = window.innerHeight,
       varSize = baseSize / 2,
       minSize = baseSize / 4;
+  
   var total = data.you.score + data.global.score;
   var youRatio = data.you.score / total,
       globalRatio = 1 - youRatio;
@@ -43,15 +44,15 @@ function initCircles(data) {
   setCircleSize(global, (globalRatio * varSize) + minSize);
 }
 
+function updateVisual() {
+  initCircles(window.DATA);
+  centerCircles();
+}
+
 $(function() {
   you = $('#you');
   global = $('#global');
-
-  initCircles(window.DATA);
-  centerCircles();
+  updateVisual();
 });
 
-$(window).resize(function() {
-  initCircles(window.DATA);
-  centerCircles();
-});
+$(window).resize(updateVisual);
