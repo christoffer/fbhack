@@ -7,8 +7,10 @@
 <script src="http://connect.facebook.net/en_US/all.js"></script>
 <script>
   FB.init({ 
-     appId:'209106392449144', cookie:true, 
-     status:true, xfbml:true 
+    appId:'209106392449144', 
+    cookie:true, 
+    status:true, 
+    xfbml:true 
   });
 </script>
-<fb:login-button onlogin="facebook_onlogin();">Login with Facebook</fb:login-button>
+<fb:login-button onlogin="facebook_onlogin();" perms="friends_interests,friends_likes">Login with Facebook</fb:login-button>

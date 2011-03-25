@@ -2,8 +2,8 @@
 
   <head>
     <script type="text/javascript" src="javascripts/jquery.js"></script>
-    <script type="text/javascript" src="javascripts/app.js"></script>
     <link rel="stylesheet" href="stylesheets/screen.css" type="text/css" /> 
+    <script type="text/javascript">window.fb_token = '<%= @fb_access_token %>'</script>
   </head>
 
   <body>
@@ -18,8 +18,16 @@
       <span class="count">-</span>
     </div>
 
+    <script type="text/javascript" src="javascripts/app.js"></script>
+
     <!-- facebook API -->
     <div id="fb-root"></div>
+    <script type="text/javascript">
+      window.fbAsyncInit = function() { 
+        FB.init({appId: '<%= @fb_app_id %>', status: true, cookie: true, xfbml: true}); 
+        collectIntellectualsAsync(<%= @user.id %>);
+      };
+    </script>
     <script src="/javascripts/facebook.js"></script>
   </body>
 </html>
