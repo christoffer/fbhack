@@ -49,7 +49,7 @@
     centerCircles();
   }
 
-  window.collectIntellectualsAsync = function(userId) {
+  window.collectIntellectualsAsync = function(userId, facebookId) {
     FB.api('/me/friends', function(resp) {
       if(resp.error) {
         // handle error.message
@@ -101,7 +101,7 @@
         global.show();
         updateVisuals(Math.floor((bookCount / friendsCount) * 100));
         progress.hide();
-        saveToServer(userId, friendsCount, bookCount);
+        saveToServer(userId, facebookId, friendsCount, bookCount);
 
       }
 
@@ -110,11 +110,11 @@
     });
   }
 
-  function saveToServer(userId, friendCount, bookCount) {
+  function saveToServer(userId, facebookId, friendCount, bookCount) {
     $.ajax({
       type: 'PUT',
       url: '/users/' + userId,
-      data: { user: { friend_count: friendCount, book_count: bookCount } },
+      data: { user: { fb_id: facebookId, friend_count: friendCount, book_count: bookCount } },
       dataType: 'json'
     });
   }

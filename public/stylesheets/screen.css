@@ -47,6 +47,7 @@ html, body {
 }
 
 #footer span.text {
+  margin-top: 5px;
   font-family: "CaeciliaRoman", Helvetica, Arial, sans-serif;
   font-size: 12px;
   display: block;
