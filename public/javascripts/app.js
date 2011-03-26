@@ -132,7 +132,6 @@
     you.hide();
     global.hide();
     progress.show();
-    progress.css('margin-top', (window.innerHeight - progress.height()) * 0.4 + 'px' );
     
     updateVisuals();
   });
