@@ -18,9 +18,25 @@
 html, body {
   margin: 0;
   padding: 0;
-  -webkit-box-shadow:inset 0 0 20px rgba(0, 0, 0, 0.25); 
-  -moz-box-shadow:inset 0 0 20px rgba(0, 0, 0, 0.25);
   background: rgb(41,38,69) url(/images/bg_pattern_background.png) repeat top left;
+}
+
+#progress {
+  height: 5px;
+  width: 500px;
+  margin: 0 auto;
+  background: #595673;
+  position: relative;
+  top: 0px;
+  -webkit-border-radius: 10px;
+}
+
+#progress #bar {
+  height: 100%;
+  background: white;
+  position: relative;
+  left: 0;
+  -webkit-border-radius: 10px;
 }
 
 h1 {

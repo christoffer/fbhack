@@ -3,11 +3,18 @@
   <head>
     <script type="text/javascript" src="javascripts/jquery.js"></script>
     <link rel="stylesheet" href="stylesheets/screen.css" type="text/css" /> 
-    <script type="text/javascript">window.fb_token = '<%= @fb_access_token %>'</script>
+    <script type="text/javascript">
+      window.GLOBAL_SCORE = <%= @global_score %>;
+    </script>
   </head>
 
   <body>
     <h1>How literary are your friends?</h1>
+    <div id="progress">
+      <div id="bar"></div>
+    </div>
+
+
     <div class="circle" id="you">
       <span class="title">Your friends</span>
       <span class="count">-</span>

@@ -29,23 +29,23 @@
     el.find('span.title').css('margin-top', el.height() / 2 - (75 / 2));
   }
 
-  function initCircles(data) {
+  function initCircles(myScore) {
     var baseSize = window.innerHeight,
         varSize = baseSize / 2,
         minSize = baseSize / 3;
-    var total = data.you.score + data.global.score;
-    var youRatio = data.you.score / total,
+    var total = myScore + window.GLOBAL_SCORE;
+    var youRatio = myScore / total,
         globalRatio = 1 - youRatio;
 
-    you.find('span.count').html('Your friends\' literary score is '+data.you.score);
-    global.find('span.count').html('Average is ' + data.global.score);
+    you.find('span.count').html('Your friends\' literary score is '+ myScore);
+    global.find('span.count').html('Average is ' + window.GLOBAL_SCORE);
 
     setCircleSize(you, (youRatio * varSize) + minSize);
     setCircleSize(global, (globalRatio * varSize) + minSize);
   }
 
-  function updateVisual() {
-    initCircles(window.DATA);
+  function updateVisuals(myScore) {
+    initCircles(myScore || 0);
     centerCircles();
   }
 
@@ -74,23 +74,18 @@
         thisBatch = friends.splice(0, 10);
       }
 
-      console.log(batches);
-
       var bookCount = 0,
           completedSegments = 0,
           expectedSegments = batches.length;
 
       for(var i = 0, len = batches.length; i < len; i++) {
-        console.log('Processing batch:' + i);
-        updateProgress(i / len);
-        FB.api('/books', 'GET', { ids: batches[i].join(','), access_token: fb_token }, function(resp) {
+        updateProgress(Math.floor((i / len) * 100));
+        FB.api('/books', 'GET', { ids: batches[i].join(',') }, function(resp) {
           for(var personId in resp) {
             if(resp.hasOwnProperty(personId)) {
               var person = resp[personId];
               bookCount = bookCount + person.data.length;
-              console.log('Bookcount is currently: ' + bookCount);
               if(person.data.length > 0) {
-                console.log('Has ' + person.data.length + ' books');
               }
             }
           }
@@ -104,7 +99,13 @@
           return;
         }
 
+        you.show();
+        global.show();
+        console.log('Score' + Math.floor((bookCount / friendsCount) * 10));
+        initCircles(Math.floor((bookCount / friendsCount) * 10));
+        progress.fadeOut();
         saveToServer(userId, friendsCount, bookCount);
+
       }
 
       setTimeout(completeOrWait, 100);
@@ -113,20 +114,31 @@
   }
 
   function saveToServer(userId, friendCount, bookCount) {
-    $.post('/users/' + userId, { user: { friend_count: friendCount, book_count: bookCount } });
+    $.ajax({
+      type: 'PUT',
+      url: '/users/' + userId,
+      data: { user: { friend_count: friendCount, book_count: bookCount } },
+      dataType: 'json'
+    });
   }
 
   function updateProgress(pct) {
-    console.log(pct + '%');
+    console.log('Progress is ' + pct + '%');
+    $('#bar').css('width', pct + '%');
   }
-
 
   $(function() {
     you = $('#you');
     global = $('#global');
-    window.DATA = { you: { score: 0 }, global: { score: 0 }};
-    updateVisual();
+    progress = $('#progress');
+
+    you.hide();
+    global.hide();
+    progress.show();
+    progress.css('margin-top', (window.innerHeight - progress.height()) * 0.4 + 'px' );
+    
+    updateVisuals();
   });
 
-  $(window).resize(updateVisual);
+  $(window).resize(updateVisuals);
 })();
