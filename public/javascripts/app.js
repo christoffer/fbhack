@@ -102,7 +102,7 @@
         you.show();
         global.show();
         console.log('Score' + Math.floor((bookCount / friendsCount) * 10));
-        initCircles(Math.floor((bookCount / friendsCount) * 10));
+        updateVisuals(Math.floor((bookCount / friendsCount) * 10));
         progress.fadeOut();
         saveToServer(userId, friendsCount, bookCount);
 
