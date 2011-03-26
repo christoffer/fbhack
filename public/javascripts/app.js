@@ -79,8 +79,8 @@
           expectedSegments = batches.length;
 
       for(var i = 0, len = batches.length; i < len; i++) {
-        updateProgress(Math.floor((i / len) * 100));
         FB.api('/books', 'GET', { ids: batches[i].join(',') }, function(resp) {
+          updateProgress(Math.floor((completedSegments / expectedSegments) * 100));
           for(var personId in resp) {
             if(resp.hasOwnProperty(personId)) {
               var person = resp[personId];

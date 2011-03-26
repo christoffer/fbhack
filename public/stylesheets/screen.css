@@ -36,6 +36,7 @@ html, body {
   background: white;
   position: relative;
   left: 0;
+  width: 0;
   -webkit-border-radius: 10px;
 }
 
