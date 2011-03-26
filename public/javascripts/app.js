@@ -100,7 +100,7 @@
         you.show();
         global.show();
         updateVisuals(Math.floor((bookCount / friendsCount) * 100));
-        progress.fadeOut();
+        progress.hide();
         saveToServer(userId, friendsCount, bookCount);
 
       }
