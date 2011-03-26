@@ -50,6 +50,17 @@ h1 {
   background:transparent !important;
 }
 
+h1.huge {
+  font-size: 80px;
+  width: 800px;
+  margin: 0 auto;
+}
+
+#fb-button {
+  margin-top: 100px;
+  text-align: center;
+}
+
 .circle {
   border-radius: 100px;
   width: 200px;

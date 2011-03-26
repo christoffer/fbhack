@@ -1,41 +1,36 @@
-<html>
+<% content_for(:head) do %>
+  <script type="text/javascript" src="javascripts/jquery.js"></script>
+  <link rel="stylesheet" href="stylesheets/screen.css" type="text/css" /> 
+  <script type="text/javascript">
+    window.GLOBAL_SCORE = <%= @global_score %>;
+  </script>
+<% end %>
 
-  <head>
-    <script type="text/javascript" src="javascripts/jquery.js"></script>
-    <link rel="stylesheet" href="stylesheets/screen.css" type="text/css" /> 
-    <script type="text/javascript">
-      window.GLOBAL_SCORE = <%= @global_score %>;
-    </script>
-  </head>
-
-  <body>
-    <h1>How literary are your friends?</h1>
-    <div id="progress">
-      <div id="bar"></div>
-    </div>
+<h1>How literary are your friends?</h1>
+<div id="progress">
+  <div id="bar"></div>
+</div>
 
 
-    <div class="circle" id="you">
-      <span class="title">Your friends</span>
-      <span class="count">-</span>
-    </div>
+<div class="circle" id="you">
+  <span class="title">Your friends</span>
+  <span class="count">-</span>
+</div>
 
-    <div class="circle" id="global">
-      <span class="title">Others' friends</span>
-      <span class="count">-</span>
-    </div>
+<div class="circle" id="global">
+  <span class="title">Others' friends</span>
+  <span class="count">-</span>
+</div>
 
-    <script type="text/javascript" src="javascripts/app.js"></script>
+<script type="text/javascript" src="javascripts/app.js"></script>
 
-    <!-- facebook API -->
-    <div id="fb-root"></div>
-    <script type="text/javascript">
-      window.fbAsyncInit = function() { 
-        FB.init({appId: '<%= @fb_app_id %>', status: true, cookie: true, xfbml: true}); 
-        collectIntellectualsAsync(<%= @user.id %>);
-      };
-    </script>
-    <script src="/javascripts/facebook.js"></script>
-  </body>
-</html>
+<!-- facebook API -->
+<div id="fb-root"></div>
+<script type="text/javascript">
+  window.fbAsyncInit = function() { 
+    FB.init({appId: '<%= @fb_app_id %>', status: true, cookie: true, xfbml: true}); 
+    collectIntellectualsAsync(<%= @user.id %>);
+  };
+</script>
+<script src="/javascripts/facebook.js"></script>
 
