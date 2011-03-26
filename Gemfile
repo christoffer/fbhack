@@ -6,9 +6,15 @@ gem 'rails', '3.0.3'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'json'
-gem 'mysql2'
 gem 'mini_fb'
-gem 'httparty'
+
+group :development do
+  gem 'mysql2'
+end
+
+group :production do
+  gem 'pg'
+end
 
 # Use unicorn as the web server
 # gem 'unicorn'

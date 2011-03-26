@@ -5552,3 +5552,213 @@ Started PUT "/users/1" for 127.0.0.1 at 2011-03-26 01:26:37 +0100
   [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
   [1m[35mSQL (0.1ms)[0m  COMMIT
 Completed 200 OK in 59ms
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 01:30:03 +0100 2011
+  Processing by UsersController#index as HTML
+Rendered users/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/connect" for 127.0.0.1 at Sat Mar 26 01:30:14 +0100 2011
+  Processing by UsersController#fb_connect as HTML
+  [1m[36mSQL (1.6ms)[0m  [1mSELECT SUM(`users`.`book_count`) AS sum_id FROM `users`[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT SUM(`users`.`friend_count`) AS sum_id FROM `users`
+Completed   in 40ms
+
+FloatDomainError (NaN):
+  app/models/user.rb:4:in `to_i'
+  app/models/user.rb:4:in `total_book_score'
+  app/controllers/users_controller.rb:15:in `fb_connect'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.0ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.5ms)
+
+
+Started GET "/connect" for 127.0.0.1 at Sat Mar 26 01:30:22 +0100 2011
+  Processing by UsersController#fb_connect as HTML
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT SUM(`users`.`book_count`) AS sum_id FROM `users`[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT SUM(`users`.`friend_count`) AS sum_id FROM `users`
+Completed   in 10ms
+
+FloatDomainError (NaN):
+  app/models/user.rb:4:in `to_i'
+  app/models/user.rb:4:in `total_book_score'
+  app/controllers/users_controller.rb:15:in `fb_connect'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.8ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 01:30:32 +0100 2011
+  Processing by UsersController#index as HTML
+Rendered users/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 01:30:33 +0100 2011
+  Processing by UsersController#index as HTML
+Rendered users/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/connect" for 127.0.0.1 at Sat Mar 26 01:30:34 +0100 2011
+  Processing by UsersController#fb_connect as HTML
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT SUM(`users`.`book_count`) AS sum_id FROM `users`[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT SUM(`users`.`friend_count`) AS sum_id FROM `users`
+Completed   in 8ms
+
+FloatDomainError (NaN):
+  app/models/user.rb:4:in `to_i'
+  app/models/user.rb:4:in `total_book_score'
+  app/controllers/users_controller.rb:15:in `fb_connect'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.7ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 01:30:44 +0100 2011
+  Processing by UsersController#index as HTML
+Rendered users/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/connect" for 127.0.0.1 at Sat Mar 26 01:30:54 +0100 2011
+  Processing by UsersController#fb_connect as HTML
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT SUM(`users`.`book_count`) AS sum_id FROM `users`[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT SUM(`users`.`friend_count`) AS sum_id FROM `users`
+Completed   in 8ms
+
+FloatDomainError (NaN):
+  app/models/user.rb:4:in `to_i'
+  app/models/user.rb:4:in `total_book_score'
+  app/controllers/users_controller.rb:15:in `fb_connect'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.0ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 01:30:58 +0100 2011
+  Processing by UsersController#index as HTML
+Rendered users/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/connect" for 127.0.0.1 at Sat Mar 26 01:31:01 +0100 2011
+  Processing by UsersController#fb_connect as HTML
+  [1m[36mSQL (0.9ms)[0m  [1mSELECT SUM(`users`.`book_count`) AS sum_id FROM `users`[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT SUM(`users`.`friend_count`) AS sum_id FROM `users`
+Completed   in 10ms
+
+FloatDomainError (NaN):
+  app/models/user.rb:4:in `to_i'
+  app/models/user.rb:4:in `total_book_score'
+  app/controllers/users_controller.rb:15:in `fb_connect'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.6ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.5ms)
+
+
+Started GET "/connect" for 127.0.0.1 at Sat Mar 26 01:31:47 +0100 2011
+  Processing by UsersController#fb_connect as HTML
+  [1m[36mSQL (1.5ms)[0m  [1mSELECT COUNT(*) FROM `users`[0m
+  [1m[35mSQL (1.6ms)[0m  SHOW TABLES
+  [1m[36mUser Load (2.9ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`fb_id` IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (1.3ms)[0m  [1mdescribe `users`[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `users` (`created_at`, `book_count`, `friend_count`, `fb_id`, `updated_at`) VALUES ('2011-03-26 00:31:47', 0, 0, NULL, '2011-03-26 00:31:47')
+  [1m[36mSQL (0.6ms)[0m  [1mCOMMIT[0m
+Rendered users/fb_connect.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 130ms (Views: 7.8ms | ActiveRecord: 8.3ms)
+
+
+Started PUT "/users/1" for 127.0.0.1 at Sat Mar 26 01:31:54 +0100 2011
+  Processing by UsersController#update as JSON
+  Parameters: {"id"=>"1", "user"=>{"book_count"=>"600", "friend_count"=>"977"}}
+  [1m[35mUser Load (2.1ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (1.8ms)[0m  UPDATE `users` SET `book_count` = 600, `updated_at` = '2011-03-26 00:31:54', `friend_count` = 977 WHERE (`users`.`id` = 1)
+  [1m[36mSQL (0.3ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 19ms
+
+
+Started GET "/connect" for 127.0.0.1 at Sat Mar 26 01:32:00 +0100 2011
+  Processing by UsersController#fb_connect as HTML
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `users`
+  [1m[36mSQL (1.3ms)[0m  [1mSELECT SUM(`users`.`book_count`) AS sum_id FROM `users`[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT SUM(`users`.`friend_count`) AS sum_id FROM `users`
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`fb_id` IS NULL) LIMIT 1[0m
+Rendered users/fb_connect.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 22ms (Views: 11.0ms | ActiveRecord: 6.2ms)
+
+
+Started PUT "/users/1" for 127.0.0.1 at Sat Mar 26 01:32:06 +0100 2011
+  Processing by UsersController#update as JSON
+  Parameters: {"id"=>"1", "user"=>{"book_count"=>"600", "friend_count"=>"977"}}
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  COMMIT
+Completed 200 OK in 58ms
+
+
+Started GET "/connect" for 127.0.0.1 at Sat Mar 26 01:33:35 +0100 2011
+  Processing by UsersController#fb_connect as HTML
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `users`[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT SUM(`users`.`book_count`) AS sum_id FROM `users`
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT SUM(`users`.`friend_count`) AS sum_id FROM `users`[0m
+  [1m[35mSQL (0.4ms)[0m  SHOW TABLES
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`fb_id` IS NULL) LIMIT 1[0m
+Rendered users/fb_connect.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 51ms (Views: 11.4ms | ActiveRecord: 1.2ms)
+
+
+Started PUT "/users/1" for 127.0.0.1 at Sat Mar 26 01:33:48 +0100 2011
+  Processing by UsersController#update as JSON
+  Parameters: {"id"=>"1", "user"=>{"book_count"=>"600", "friend_count"=>"977"}}
+  [1m[35mUser Load (0.9ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  COMMIT
+Completed 200 OK in 17ms
+
+
+Started GET "/connect" for 127.0.0.1 at Sat Mar 26 01:34:03 +0100 2011
+  Processing by UsersController#fb_connect as HTML
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `users`[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT SUM(`users`.`book_count`) AS sum_id FROM `users`
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT SUM(`users`.`friend_count`) AS sum_id FROM `users`[0m
+  [1m[35mUser Load (0.9ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`fb_id` IS NULL) LIMIT 1
+Rendered users/fb_connect.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 29ms (Views: 11.7ms | ActiveRecord: 2.7ms)
+
+
+Started PUT "/users/1" for 127.0.0.1 at Sat Mar 26 01:34:15 +0100 2011
+  Processing by UsersController#update as JSON
+  Parameters: {"id"=>"1", "user"=>{"book_count"=>"600", "friend_count"=>"977"}}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 15ms
+
+
+Started GET "/connect" for 127.0.0.1 at Sat Mar 26 01:34:21 +0100 2011
+  Processing by UsersController#fb_connect as HTML
+  [1m[35mSQL (1.1ms)[0m  SELECT COUNT(*) FROM `users`
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT SUM(`users`.`book_count`) AS sum_id FROM `users`[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT SUM(`users`.`friend_count`) AS sum_id FROM `users`
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`fb_id` IS NULL) LIMIT 1[0m
+Rendered users/fb_connect.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 22ms (Views: 10.5ms | ActiveRecord: 2.2ms)
+
+
+Started PUT "/users/1" for 127.0.0.1 at Sat Mar 26 01:34:31 +0100 2011
+  Processing by UsersController#update as JSON
+  Parameters: {"id"=>"1", "user"=>{"book_count"=>"600", "friend_count"=>"977"}}
+  [1m[35mUser Load (1.3ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  COMMIT
+Completed 200 OK in 15ms
