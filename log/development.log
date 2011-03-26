@@ -5762,3 +5762,15 @@ Started PUT "/users/1" for 127.0.0.1 at Sat Mar 26 01:34:31 +0100 2011
   [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
   [1m[35mSQL (0.2ms)[0m  COMMIT
 Completed 200 OK in 15ms
+  [1m[36mSQL (1.3ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.3ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+Migrating to CreateUsers (20110325151459)
+Migrating to ChangesFbIdToString (20110326102434)
+  [1m[35mSQL (171.9ms)[0m  ALTER TABLE `users` CHANGE `fb_id` `fb_id` varchar(255) DEFAULT NULL
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20110326102434')[0m
+  [1m[35mSQL (0.4ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+  [1m[35mSQL (0.2ms)[0m  SHOW TABLES
+  [1m[36mSQL (1.1ms)[0m  [1mdescribe `users`[0m
+  [1m[35mSQL (1.1ms)[0m  SHOW KEYS FROM `users`

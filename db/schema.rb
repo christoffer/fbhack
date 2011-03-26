@@ -10,10 +10,10 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110325151459) do
+ActiveRecord::Schema.define(:version => 20110326102434) do
 
   create_table "users", :force => true do |t|
-    t.integer  "fb_id"
+    t.string   "fb_id"
     t.integer  "book_count",   :default => 0
     t.integer  "friend_count", :default => 0
     t.datetime "created_at"
