@@ -31,6 +31,28 @@ html, body {
   -webkit-border-radius: 10px;
 }
 
+#footer {
+  position: absolute;
+  bottom: 60px;
+  color: white;
+  display: block;
+  width: 100%;
+}
+
+#footer span.title {
+  font-family: "CaeciliaHeavy", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  display: block;
+  text-align: center;
+}
+
+#footer span.text {
+  font-family: "CaeciliaRoman", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  display: block;
+  text-align: center;
+}
+
 #progress #bar {
   height: 100%;
   background: white;
@@ -53,7 +75,7 @@ h1 {
 h1.huge {
   font-size: 80px;
   width: 800px;
-  margin: 0 auto;
+  margin: 10% auto 0;
 }
 
 #fb-button {
