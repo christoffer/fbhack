@@ -5774,3 +5774,234 @@ Migrating to ChangesFbIdToString (20110326102434)
   [1m[35mSQL (0.2ms)[0m  SHOW TABLES
   [1m[36mSQL (1.1ms)[0m  [1mdescribe `users`[0m
   [1m[35mSQL (1.1ms)[0m  SHOW KEYS FROM `users`
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 11:34:04 +0100 2011
+  Processing by UsersController#index as HTML
+Rendered users/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 8ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/connect" for 127.0.0.1 at Sat Mar 26 11:34:13 +0100 2011
+  Processing by UsersController#fb_connect as HTML
+Completed   in 0ms
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  app/controllers/users_controller.rb:15:in `fb_connect'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.4ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (122.8ms)
+
+
+Started GET "/connect" for 127.0.0.1 at Sat Mar 26 11:35:31 +0100 2011
+  Processing by UsersController#fb_connect as HTML
+Rendered users/fb_connect.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 39ms (Views: 8.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/connect" for 127.0.0.1 at Sat Mar 26 11:35:44 +0100 2011
+  Processing by UsersController#fb_connect as HTML
+Rendered users/fb_connect.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 11ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/connect" for 127.0.0.1 at Sat Mar 26 11:36:17 +0100 2011
+  Processing by UsersController#fb_connect as HTML
+Rendered users/fb_connect.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 90ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 11:38:33 +0100 2011
+  Processing by UsersController#index as HTML
+Rendered users/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/connect" for 127.0.0.1 at Sat Mar 26 11:38:35 +0100 2011
+  Processing by UsersController#fb_connect as HTML
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `users`[0m
+Rendered users/fb_connect.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 17ms (Views: 7.9ms | ActiveRecord: 0.2ms)
+
+
+Started PUT "/users/2186063980" for 127.0.0.1 at Sat Mar 26 11:38:42 +0100 2011
+  Processing by UsersController#update as JSON
+  Parameters: {"id"=>"2186063980", "user"=>{"book_count"=>"600", "friend_count"=>"977", "fb_id"=>"522091142"}}
+  [1m[35mSQL (0.5ms)[0m  SHOW TABLES
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 2186063980) LIMIT 1[0m
+Completed   in 8ms
+
+ActiveRecord::RecordNotFound (Couldn't find User with ID=2186063980):
+  app/controllers/users_controller.rb:26:in `update'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.7ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.0ms)
+
+
+Started GET "/connect" for 127.0.0.1 at Sat Mar 26 11:39:04 +0100 2011
+  Processing by UsersController#fb_connect as HTML
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `users`
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (fb_id LIKE '522091142') LIMIT 1[0m
+Rendered users/fb_connect.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 16ms (Views: 8.0ms | ActiveRecord: 1.2ms)
+
+
+Started PUT "/users/2187541860" for 127.0.0.1 at Sat Mar 26 11:39:12 +0100 2011
+  Processing by UsersController#update as JSON
+  Parameters: {"id"=>"2187541860", "user"=>{"book_count"=>"600", "friend_count"=>"977", "fb_id"=>"522091142"}}
+  [1m[35mUser Load (0.5ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 2187541860) LIMIT 1
+Completed   in 7ms
+
+ActiveRecord::RecordNotFound (Couldn't find User with ID=2187541860):
+  app/controllers/users_controller.rb:26:in `update'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.8ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.8ms)
+
+
+Started GET "/connect" for 127.0.0.1 at Sat Mar 26 11:40:47 +0100 2011
+  Processing by UsersController#fb_connect as HTML
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `users`[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE (fb_id LIKE '522091142') LIMIT 1
+Completed   in 9ms
+
+NoMethodError (undefined method `results' for []:ActiveRecord::Relation):
+  app/controllers/users_controller.rb:19:in `fb_connect'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (76.5ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (82.3ms)
+
+
+Started GET "/connect" for 127.0.0.1 at Sat Mar 26 11:40:52 +0100 2011
+  Processing by UsersController#fb_connect as HTML
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `users`[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `users` WHERE (fb_id LIKE '522091142') LIMIT 1
+Rendered users/fb_connect.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 18ms (Views: 9.1ms | ActiveRecord: 0.8ms)
+
+
+Started PUT "/users/2187334840" for 127.0.0.1 at Sat Mar 26 11:41:01 +0100 2011
+  Processing by UsersController#update as JSON
+  Parameters: {"id"=>"2187334840", "user"=>{"book_count"=>"600", "friend_count"=>"977", "fb_id"=>"522091142"}}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 2187334840) LIMIT 1[0m
+Completed   in 7ms
+
+ActiveRecord::RecordNotFound (Couldn't find User with ID=2187334840):
+  app/controllers/users_controller.rb:30:in `update'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.2ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.2ms)
+
+
+Started GET "/connect" for 127.0.0.1 at Sat Mar 26 11:41:50 +0100 2011
+  Processing by UsersController#fb_connect as HTML
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM `users`
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `users` WHERE (fb_id LIKE '522091142')[0m
+Rendered users/fb_connect.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 16ms (Views: 8.6ms | ActiveRecord: 0.5ms)
+
+
+Started PUT "/users/2184882140" for 127.0.0.1 at Sat Mar 26 11:41:57 +0100 2011
+  Processing by UsersController#update as JSON
+  Parameters: {"id"=>"2184882140", "user"=>{"book_count"=>"600", "friend_count"=>"977", "fb_id"=>"522091142"}}
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 2184882140) LIMIT 1
+Completed   in 8ms
+
+ActiveRecord::RecordNotFound (Couldn't find User with ID=2184882140):
+  app/controllers/users_controller.rb:31:in `update'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (8.3ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.4ms)
+
+
+Started GET "/connect" for 127.0.0.1 at Sat Mar 26 11:42:00 +0100 2011
+  Processing by UsersController#fb_connect as HTML
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) FROM `users`[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `users` WHERE (fb_id LIKE '522091142')
+Completed   in 7ms
+
+RuntimeError (#<ActiveRecord::Relation:0x1048612a8>):
+  app/controllers/users_controller.rb:22:in `fb_connect'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (fb_id LIKE '522091142')[0m
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.1ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.8ms)
+
+
+Started GET "/connect" for 127.0.0.1 at Sat Mar 26 11:42:01 +0100 2011
+  Processing by UsersController#fb_connect as HTML
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `users`
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `users` WHERE (fb_id LIKE '522091142')[0m
+Completed   in 79ms
+
+RuntimeError (#<ActiveRecord::Relation:0x104cd6748>):
+  app/controllers/users_controller.rb:22:in `fb_connect'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE (fb_id LIKE '522091142')
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.7ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.4ms)
+
+
+Started GET "/connect" for 127.0.0.1 at Sat Mar 26 11:42:14 +0100 2011
+  Processing by UsersController#fb_connect as HTML
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `users`[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE (fb_id LIKE '522091142')
+Completed   in 8ms
+
+RuntimeError ():
+  app/controllers/users_controller.rb:22:in `fb_connect'
+
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.8ms)
+Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.5ms)
+
+
+Started GET "/connect" for 127.0.0.1 at Sat Mar 26 11:42:27 +0100 2011
+  Processing by UsersController#fb_connect as HTML
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `users`[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE (fb_id LIKE '522091142')
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (3.5ms)[0m  describe `users`
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO `users` (`updated_at`, `created_at`, `fb_id`, `book_count`, `friend_count`) VALUES ('2011-03-26 10:42:27', '2011-03-26 10:42:27', '522091142', 0, 0)[0m
+  [1m[35mSQL (0.3ms)[0m  COMMIT
+Rendered users/fb_connect.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 27ms (Views: 6.3ms | ActiveRecord: 6.5ms)
+
+
+Started PUT "/users/1" for 127.0.0.1 at Sat Mar 26 11:42:34 +0100 2011
+  Processing by UsersController#update as JSON
+  Parameters: {"id"=>"1", "user"=>{"book_count"=>"600", "friend_count"=>"977", "fb_id"=>"522091142"}}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  BEGIN
+  [1m[36mAREL (1.6ms)[0m  [1mUPDATE `users` SET `book_count` = 600, `friend_count` = 977, `updated_at` = '2011-03-26 10:42:34' WHERE (`users`.`id` = 1)[0m
+  [1m[35mSQL (0.7ms)[0m  COMMIT
+Completed 200 OK in 19ms
+
+
+Started GET "/connect" for 127.0.0.1 at Sat Mar 26 11:42:35 +0100 2011
+  Processing by UsersController#fb_connect as HTML
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `users`[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT SUM(`users`.`book_count`) AS sum_id FROM `users`
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT SUM(`users`.`friend_count`) AS sum_id FROM `users`[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE (fb_id LIKE '522091142')
+Rendered users/fb_connect.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 19ms (Views: 10.9ms | ActiveRecord: 3.5ms)
+
+
+Started PUT "/users/1" for 127.0.0.1 at Sat Mar 26 11:42:42 +0100 2011
+  Processing by UsersController#update as JSON
+  Parameters: {"id"=>"1", "user"=>{"book_count"=>"600", "friend_count"=>"977", "fb_id"=>"522091142"}}
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 16ms

@@ -15,7 +15,12 @@ class UsersController < ApplicationController
       @fb_uid = fb_info['uid']
       @global_score = User.total_book_score
       if MiniFB.verify_cookie_signature('209106392449144', "fc6cfb76f24a937d5ab6161e468b24af", cookies)
-        @user = User.find_or_create_by_fb_id(@fb_uid)
+        @user = User.where(['fb_id LIKE ?', @fb_uid]).all
+        if @user.any?
+          @user = @user.first
+        else
+          @user = User.create!(:fb_id => @fb_uid)
+        end
       else
         redirect_to root_path
       end
