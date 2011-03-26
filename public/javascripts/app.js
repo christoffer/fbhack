@@ -85,8 +85,6 @@
             if(resp.hasOwnProperty(personId)) {
               var person = resp[personId];
               bookCount = bookCount + person.data.length;
-              if(person.data.length > 0) {
-              }
             }
           }
           completedSegments++;
@@ -101,8 +99,7 @@
 
         you.show();
         global.show();
-        console.log('Score' + Math.floor((bookCount / friendsCount) * 10));
-        updateVisuals(Math.floor((bookCount / friendsCount) * 10));
+        updateVisuals(Math.floor((bookCount / friendsCount) * 100));
         progress.fadeOut();
         saveToServer(userId, friendsCount, bookCount);
 
